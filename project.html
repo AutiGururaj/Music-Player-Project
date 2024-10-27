@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Music Player</title>
+    <link rel="icon" href="./images/icon.jpg">
+	<link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#000000">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="html" href="./Rihanna.html">
+	<link rel="html" href="./drake.html">
+	<link rel="html" href="./eminem.html">
+
+</head>
+<body>
+	<div class="main">
+		<div class="progress_bar" id="Bar"></div>
+		<img src="./images/bgg.jpg" alt="" id="bg">
+
+		<!-- navbar part -->
+		<div class="navbar">
+			<a href="#" id="logo"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Music</a>
+            <a onclick="open_close_menu()" id="responsive_menu"><i class='bx bxs-chevron-down' ></i></a>
+
+			<div class="nav_content">
+				<li><a href="#">Home</a></li>
+				<li><a href="#top_tracks">Tracks</a></li>
+				<li><a href="#user_comments">Comments</a></li>
+				<li><a href="https://www.instagram.com/spotify/?hl=en" target="_blank">Contact Us</a></li>
+				<li><a href="#">Sign up</a></li>
+			</div>
+
+            <a onclick="menu_action()" id="menu_btn"><i class='bx bx-menu-alt-left'></i></a>
+			<div class="side_menu">
+				<li><a href="#"><i class='bx bx-category'></i></a></li>
+				<li><a href="#"><i class='bx bx-tv'></i></a></li>
+				<li><a href="#"><i class='bx bxs-movie-play'></i></a></li>
+				<li><a href="#"><i class='bx bxs-message-square-detail'></i></a></li>
+				<li><a href="#"><i class='bx bx-merge'></i></a></li>
+				<li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+			</div>
+		</div>
+       <!--  mid part -->
+		<div class="mid_part">
+            <img src="./images/weeknd.png" alt="">
+
+			<div class="description">
+				<p id="A_name">The Weeknd</p>
+				<p>Canadian Singer</p>
+				<br>
+				<div class="author_desc">
+				   <p>Hey there! I'm The Weeknd, or you can call me Abel.My music is a fusion of R&B, pop, and electronic sounds, and I'm known for my distinctive falsetto vocals.</p>
+				</div>
+
+                 <div class="buttons">
+                   <button><i class='bx bx-play'></i></button>
+				   <button><i class='bx bxs-like' ></i></button>
+				   <button><i class='bx bx-share-alt'></i></button>
+				   <button><i class='bx bx-bookmark-alt'></i></button>
+                 </div>
+
+			</div>
+		</div>
+
+        <!-- tracks part -->
+		<div class="top_tracks" id="top_tracks">
+			<p id="heading"><i class='bx bxs-playlist'></i>&nbsp;&nbsp;Top Tracks</p>
+			<div id="track"></div>
+			<div id="track">
+				<img src="song_img/one direction.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+
+				<audio src="songs/2.mp3" id="music"></audio>
+
+				<div id="song_desc">
+				   <p>What Makes You Beautiful</p>
+				   <p>One Direction</p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;159476+</p>
+				   <p id="message">New</p>
+				</div>
+				<div id="actions_2">
+				  <p><a href="#"><i class='bx bx-share' ></i></a></p>
+				  <p><a href="2.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="song_img/blank space.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/1.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					<p>Blank Space</p>
+				   <p>Taylor Swift</p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;797229+</p>
+				   <p id="message">New</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="1.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="song_img/Alan_Walker_-_Faded.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/3.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Faded</p>
+				     <p>Alan Walker</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;252475+</p>
+				     <p id="message">New</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="3.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="song_img/more than this.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/4.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>More Than This</p>
+				     <p>One Direction</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;262643+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="4.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="song_img/perfect.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/5.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Perfect</p>
+				     <p>Ed Sheeran</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;920821+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="5.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+		</div>
+
+        <!-- user comments part -->
+		<div class="user_comments" id="user_comments">
+			<p id="heading"><i class='bx bx-comment-detail'></i>&nbsp;&nbsp;Comments</p>
+            
+           <div class="comments">
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;Pranav</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>One Direction's artists were undoubtedly a positive force in the music industry. Their catchy melodies, heartfelt lyrics, and infectious energy brought joy to millions of fans around the world. </p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;Gururaj</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>Taylor Swift is an exceptionally talented artist who has had a tremendously positive impact on the music industry and her fans. With her gift for storytelling and relatable lyrics, she has connected deeply with people from all walks of life.</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;Rohit Kumar</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>Ariana Grande is a powerhouse artist who has made an overwhelmingly positive impact on the music industry and beyond. With her incredible vocal range, she has mesmerized audiences worldwide and garnered critical acclaim for her talent. </p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	<div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;Sanjana</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>The Weeknd is an incredibly talented artist who has had a profoundly positive impact on the music industry and the hearts of his fans. With his distinctive sound, soulful voice, and captivating storytelling, he has pushed boundaries and redefined the R&B genre. </p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           </div>
+
+		</div>
+
+		<!-- popular Artists part -->
+		<div class="popular_creator">
+           <p id="heading"><i class='bx bx-trophy' ></i>&nbsp;&nbsp;Popular Creators</p>
+            <div class="artists_list">
+
+            	<div class="artist">
+            		<img src="./img/rihana.jpg" alt="">
+            		<div class="artist_desc">
+            			<p><a href="./songs.html" target="_blank">Rihana</a></p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;5,115,594+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            		
+            	</div>
+
+            	<div class="artist">
+            		<img src="./img/drake.jpg" alt="">
+            		<div class="artist_desc">
+            			<p><a href="./drake.html" target="_blank">Drake</a></p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;5,103,713+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>400+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="./img/eminem.jpg" alt="">
+            		<div class="artist_desc">
+            			<p><a href="eminem.html" target="_blank">Eminem </a></p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;4,982,134+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>300+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="./img/kanye west.png" alt="">
+            		<div class="artist_desc">
+            			<p>KanyeWest</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;4,232,847+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>300+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="./img/justin beiber.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Justin beiber</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;3,806,111+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>200+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="./img/kendrick lamar.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;3,703,398+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>3500+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="./img/lady gaya.png" alt="">
+            		<div class="artist_desc">
+            			<p>Lady gaga</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;3,455,654+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>1600+</p>
+            		</div>
+            	</div>
+
+              <div class="artist">
+            		<img src="./img/arinagrande.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Ariana Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;3,235,036+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>1200+</p>
+            		</div>
+            	</div>
+				
+				<div class="artist">
+            		<img src="./img/doja.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Doja Cat</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2,455,654+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>1600+</p>
+            		</div>
+            	</div>
+
+				<div class="artist">
+            		<img src="./img/billie.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Billie Eilish</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;4,455,654+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>1800+</p>
+            		</div>
+            	</div>
+
+				<div class="artist">
+            		<img src="./img/dualipa.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Dua lipa</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;3,455,654+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>1100+</p>
+            		</div>
+            	</div>
+
+            </div>
+		</div>
+    
+          
+        <!-- footer part -->
+		<div class="footer">
+			<a id="logo"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Connect With Us </a>
+			<div class="social_handle">
+				<a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class='bx bxl-twitter' ></i></a>
+				<a href="https://www.instagram.com/spotify/?hl=en" target="_blank"><i class='bx bxl-instagram'></i></a>
+				<a href="https://www.facebook.com/Spotify/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+
+			</div>
+		</div>
+
+	</div>
+
+  <!-- javascript file -->
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- THANKYOU:-PROGRAM PIRATES :) -->
